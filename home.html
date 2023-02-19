@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AlexRoy</title>
+	<meta name="keyword" content="Blog 博客 Beyond">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="Background/logo.ico">
+	<link rel="stylesheet" href="导航栏.css">
+	<link rel="stylesheet" href="about.html">
+	<link rel="stylesheet" type="text/css" href="login.html"/> 
+	<style type="text/css">
+
+		.container .tit{
+  			font-size: 26px;
+  			margin: 65px auto 70px auto;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		ul {
+			list-style-type: none;
+		}
+		
+		.top {
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			z-index: 999;
+			height: 50px;
+			background: linear-gradient(-45deg, #ecc5b9, #ebb2c8, #aadef1, #85ddc9);
+			animation: gradientBG 5s ease infinite;
+		}
+		.menu {
+			width: 1000px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		
+		.logo {
+			float: left;
+			margin-top: 9px;
+		}
+		
+		.nav {
+			float: right;
+			margin-top: 10px;
+			font-size: 500;
+		}
+		
+		.nav li {
+			display: inline-block;
+			margin-left: 50px;
+		}
+		
+		.nav a {
+			display: inline-block;
+			height: 30px;
+			line-height: 30px;
+			font-size: 15px;
+			color: #fff;
+			text-decoration: none;
+		}
+		
+		.nav a:hover {
+			color: #83c3f3;
+		}
+
+		h1 {
+			color: rgb(224, 255, 251);
+			font-size: 100px;
+			font-family:'CygnetRound' ;
+		}
+		
+		h2 {
+			color: rgb(255, 255, 255);
+			text-align: center;
+			font-size: 50px;
+			text-decoration: underline;
+		}
+		
+		
+		.login{
+			text-align: center;
+			font-size: 30px;
+		}
+		.container button{
+ 		   width: 280px;
+  		  height: 40px;
+  		  margin: 35px auto 40px auto;
+  		  border: none;
+  		  background: linear-gradient(-200deg,#fac0e7,#aac2ee);
+  		  color: #fff;
+  		  font-weight: bold;
+  		  letter-spacing: 8px;
+  		  border-radius: 10px;
+ 		   cursor: pointer;
+  		  /*动画过渡*/
+  		  transition: 0.5s;
+		}
+
+		.button1{
+			background-color: #0091ff8e;
+			border: none;
+			color: white;
+ 	 		padding: 5px 10px;
+ 	 		text-align: center;
+ 		    text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+		}
+
+		.button2{
+			border: none;
+			color: rgb(0, 102, 255);
+ 	 		padding: 5px 10px;
+ 	 		text-align: center;
+ 		    text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+		}
+	
+	.home{
+		text-align: center;
+	}
+
+	.span{
+		color: blue;
+	}
+</style>
+</head>
+<body style="background-image: url(Background/background.png); 
+			 background-size: 100% ;
+			 background-attachment: fixed;">
+
+		<div class="top">
+		<div class="menu">
+			<ul class="nav">
+				<li>
+					<a href="home.html">首页</a>
+				<li>
+					<a href="tools.html">工具分享</a>
+				<li>
+					<a href="FAQ.html">模飞常见问题</a>
+				<li>
+					<a href="about.html">关于</a>
+				<li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<div class="home">
+<h1 style="margin-top: 300px;">AlexRoy</h1>
+<div style="font-size: 40px;color: rgb(222, 245, 220)" id="text"></div>
+		<script>
+			var str = '作者牛牛20CM';
+		    var i = 0;
+			function typing(){
+			var divTyping = document.getElementById('text');
+			  if (i <= str.length) {
+				divTyping.innerHTML = str.slice(0, i++) + '_';
+			 setTimeout('typing()', 200);
+			 }
+			  else{
+			  	divTyping.innerHTML = str;
+			 }
+			 }
+			typing();
+ 		</script>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
